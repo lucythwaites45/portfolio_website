@@ -2,17 +2,54 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
 html,body {
   height: 100%;
 }
 
+
+
+
+.header{
+	 position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Outfit", sans-serif;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.yesterday {
+  position: absolute;
+  top: -50px; /* Move it above "Today's" */
+  left: -100px; /* Move it to the left */
+}
+
+
+.tomorrow {
+  position: absolute;
+  bottom: -50px; /* Move it below "Today's" */
+  right: -100px; /* Move it to the right */
+}
+
 .wrapper {
   height: 100%;
-  font-family: 'Merriweather', serif;
   line-height: 1.5;
   word-spacing: 4px;
   letter-spacing: 1px;
 }
+
+
 
 .fixed-bg {
   background-attachment: fixed;
@@ -32,9 +69,9 @@ html,body {
 }
 
 .scroll-bg {
-  background-color: #0f0f0a;
+  background-color: #F6EACB;
   padding: 10px 70px;
-  color: #676767;
+  color: #584141;
 }
 
 /* first section */
@@ -46,7 +83,11 @@ html,body {
 /* third section */
 
 .bg-2 {
-  background-image: url('images/beach.jpg');
+  background-image: url('images/funeral.png');
+}
+
+.subtitle{
+	font-size: 12px;
 }
 
 /* fifth section */
@@ -65,4 +106,11 @@ html,body {
 .chart{
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+h2 {text-align: center;
+font-family: "Noto Sans JP", sans-serif;}
+
+p,h4{
+	font-family: "Noto Sans JP", sans-serif;
 }
